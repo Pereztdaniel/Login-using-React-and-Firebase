@@ -1,0 +1,38 @@
+.sidebar{
+	border: 1px solid #feb83a;
+	border-radius: .5rem;
+	margin: 1rem 7rem 1rem 0;
+	padding: 1rem;
+	z-index: 2;
+/*	transform: translateX(-270px);*/
+}
+
+.sidebar__top {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-bottom: 2px solid #feb83a;
+	padding-bottom: .75rem;
+}
+
+.sidebar__top img{
+	height: 5rem;
+}
+
+.sidebar__bottom{
+	margin-top: 2rem;
+
+}
+
+@media screen and (max-width:500px){
+
+	.sidebar{
+		margin: 1rem 1rem 1rem 0;
+	}
+
+	.sidebar__top img{
+		height: 4rem;
+	}
+	
+
+}

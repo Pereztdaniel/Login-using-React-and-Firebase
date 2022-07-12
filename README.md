@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# Sala de Chat
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Proyecto Práctico usando ReactJs
 
-## Available Scripts
+![Página de Inicio del Proyecto](./src/capture-1.png)
 
-In the project directory, you can run:
+###### La aplicación consiste en iniciar sesión por medio de una cuenta de correo en Google, para posteriormente entrar en una sala de Chat donde puedas escribir un comentario, el cual mostrará el contenido del post, el nombre del usuario y el avatar que utiliza como imagen. Asimismo, se muestra un boton que permite borrar el cometario.
 
-### `npm start`
+![Página posterior al haber iniciado la sesión de usuario](./src/capture-2.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+###### El Post escrito se guarda en la aplicación, de manera que si el usuario cierra sesión, su comentario no se elimina.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+###### En la parte superior del proyecto, se encuentra un botón de menu que permite traer un Sidebar en donde se puede ver el Estado del Clima de la ciudad donde el usuario se encuentra. Así como también un boton para colocar la aplicación en Modo Oscuro
 
-### `npm test`
+![Modo Oscuro](./src/capture-3.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+###### El objetivo de este proyecto práctico fue implementar una Base de Datos para registrar los usuarios que ingresan a la aplicación, almacenar el Post escrito por dicho usuario y borrarlo desde la app
 
-### `npm run build`
+###### Para ello se hizo uso de _Firebase_ que permite crear una base de datos gratuita.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+###### Para traer los datos del clima se hizo un llamado a la API de _openweathermap_
+[Sitio web del API](https://openweathermap.org)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+###### Para Estilizar el contenido se uso la librería de _MaterialUI_
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+###### Para manejar los eventos se creó un archivo llamado *reducer* que guardar los estados de las variables, para saber si el usuario inicio sesión y así poder ingresar a la aplicación de Post. Además se implemento para manejar el cambio de Tema a modo Oscuro por medio de la opción de createTheme que provee Material UI.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
